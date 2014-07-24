@@ -23,6 +23,8 @@
     echo "Failed";
   }
   
+  // USED TO INSERT INTO DB BEFOREHAND. 
+  // (note that the foreach is now commented out)
   function insert_db($title, $author, $body, $mysqli) {
     $query = "INSERT INTO articles VALUES (?, ?, ?)";
     $stmt = $mysqli->prepare("INSERT INTO articles VALUES (?, ?, ?)");
