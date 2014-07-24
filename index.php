@@ -38,10 +38,12 @@
     $query = "SELECT * FROM articles"; 
     if ($stmt = $mysqli->prepare($query)) {
       $stmt->execute();
+      $stmt->store_result();
       $stmt->bind_result($a, $b, $c);
       while ($stmt->fetch()) {
         echo '<table style="width:300px"><tr><td id="t">' . $a . '</td></tr><tr><td id="a">' . $b . '</td></tr><tr><td id="b">' . $c . '</td></tr></table><br />'; 
       }
+      $stmt->free_result();
       $stmt->close();
    }
   }
