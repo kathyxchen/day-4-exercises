@@ -1,0 +1,18 @@
+#t {
+  font-family: "Georgia";
+  font-size: 100%;
+}
+#a {
+  font-family: "Georgia";
+  font-size: 70%;
+  font-style: italic;
+  color: gray;
+}
+#b {
+  font-family: "Georgia";
+  font-size: 70%;
+}
+h2 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
